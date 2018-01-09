@@ -74,25 +74,8 @@ h4 {
 	box-sizing: border-box;
 }
 
-.item-a {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	
-	background-size: cover;
-}
-
 .item > a > img {
 	height: 140px;
-}
-
-.item > img {
-	height: 140px;
-}
-
-.item > h2 {
-
 }
 
 /* unopened lightbox */
