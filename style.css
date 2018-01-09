@@ -1,0 +1,129 @@
+html {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+	width: 900px;
+	height: 105px;
+	background-color: #3678BE;
+	font-size: 36px;
+	color: #fff;
+	border-radius: 0 0 15px 15px;
+	margin: 0 auto 30px auto;
+}
+
+nav {
+	padding: 30px 27px;
+}
+
+nav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	width: 900px;
+	margin: 0 auto;
+}
+
+body {
+	background-color: #F8D92B
+}
+
+section {
+	width: 900px;
+	height: 616px;
+	padding: 30px 25px 40px 25px;
+	background-color: #EBEBEB;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-size: 30px;
+	padding-bottom: 35px;
+}
+
+h3,
+h4 {
+	text-align: left;
+}
+
+h3 {
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+
+}
+
+h4 {
+	font-weight: normal;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	grid-template-rows: repeat(2, 236px);
+	grid-gap: 20px;
+	background-color: #EBEBEB;
+}
+
+.item {
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 15px;
+	box-sizing: border-box;
+}
+
+.item-a {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+	background-size: cover;
+}
+
+.item > a > img {
+	height: 140px;
+}
+
+.item > img {
+	height: 140px;
+}
+
+.item > h2 {
+
+}
+
+/* unopened lightbox */
+.lightbox {
+	display: none;
+}
+
+/* Opened lightbox */
+.lightbox:target {
+	position: fixed;
+	left: 0;
+	top: 104px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.lightbox img {
+	width: 400px;
+	position: relative;
+}
+
+
+.lightbox .close::before {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .7);
+	content: "";
+	cursor: default;
+}
